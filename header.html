@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Compass</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2b2b2b;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar h1 span {
+            color: #0066cc;
+            font-weight: normal;
+            margin-left: 5px;
+        }
+
+        .navbar input[type="text"] {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            width: 350px;
+            font-size: 14px;
+            background-color: #f4f4f4;
+            margin-right: 20px;
+        }
+
+        .navbar input[type="text"]:focus {
+            outline: none;
+            border-color: #0066cc;
+        }
+
+        .navbar .btn-college-predictor {
+            background: linear-gradient(90deg, #00c6ff, #0072ff); /* Gradient background */
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 102, 204, 0.2); /* Subtle shadow effect */
+        }
+
+        .navbar .btn-college-predictor:hover {
+            transform: scale(1.05); /* Slight zoom effect on hover */
+            box-shadow: 0 6px 12px rgba(0, 102, 204, 0.4); /* Larger shadow on hover */
+        }
+
+        .navbar .btn-college-predictor:focus {
+            outline: none;
+        }
+
+        .navbar .menu-icon {
+            font-size: 22px;
+            cursor: pointer;
+            margin-left: 15px;
+        }
+
+        .container {
+            padding: 80px 20px; /* Offset for fixed navbar */
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar input[type="text"] {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>College<span>Compass</span></h1>
+        <input type="text" placeholder="Search for colleges, Courses, Exams, Q&A or Articles...">
+        <button class="btn-college-predictor" onclick="window.location.href='college-predictor.html'">College Predictor</button>
+        <span class="menu-icon">&#9776;</span>
+    </div>
+
+    <div class="container">
+        <h2>Welcome to College Compass</h2>
+        <p>Your guide to finding the right college for you.</p>
+    </div>
+
+</body>
+</html>
+
+
